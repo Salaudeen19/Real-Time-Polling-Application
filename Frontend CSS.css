@@ -1,0 +1,110 @@
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.poll-container {
+  background-color: #3a404a;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.option-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.vote-button {
+  background-color: #61dafb;
+  border: none;
+  color: #282c34;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  min-width: 120px;
+}
+
+.vote-button:hover:not(:disabled) {
+  background-color: #21a1f1;
+  transform: translateY(-2px);
+}
+
+.vote-button:disabled {
+  background-color: #555;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.progress-bar-container {
+  flex-grow: 1;
+  background-color: #555;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  height: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar {
+  background-color: #61dafb;
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+  transition: width 0.5s ease-in-out;
+}
+
+.vote-count {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.thank-you-message {
+  margin-top: 20px;
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.total-votes {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.loading {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
