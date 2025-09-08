@@ -1,24 +1,48 @@
-Real-Time Polling Application:
+Real-Time Polling Application
 
 This is a full-stack web application that allows users to create polls and vote in real-time. It's built with a modern tech stack, focusing on performance, scalability, and a great user experience.
-
 The application leverages WebSockets for instant updates, ensuring that poll results are synchronized across all connected clients without needing to refresh the page. This project serves as a practical demonstration of building a modern, interactive web service with a decoupled frontend and backend, containerized for consistent deployment.
 
-Core Technologies
-Backend: Python with FastAPI
+Core Technologies:
+•	Backend: Python with FastAPI
+•	Frontend: TypeScript with React.js
+•	Real-Time Communication: WebSockets
+•	Deployment: Docker & Docker Compose
 
-Frontend: TypeScript with React.js
+Features:
+•	Live Updates: Vote results change in real-time for all users.
+•	Dynamic UI: A clean and responsive user interface built with React.
+•	Scalable Backend: A high-performance asynchronous backend powered by Python and FastAPI.
+•	Containerized: Fully containerized with Docker for easy, reproducible deployment.
 
-Real-Time Communication: WebSockets
+Project Structure:
 
-Deployment: Docker & Docker Compose
+/
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   └── main.py
+│   └── Dockerfile
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── App.css
+│   │   ├── App.tsx
+│   │   └── index.tsx
+│   ├── Dockerfile
+│   └── tsconfig.json
+└── docker-compose.yml
 
-Features
-Live Updates: Vote results change in real-time for all users.
+Getting Started:
+To run this project locally, you will need Docker and Docker Compose installed.
 
-Dynamic UI: A clean and responsive user interface built with React.
+1.Clone the repository:
 
-Scalable Backend: A high-performance asynchronous backend powered by Python and FastAPI.
+git clone [https://github.com/your-username/real-time-polling-app.git](https://github.com/your-username/real-time-polling-app.git)
+cd real-time-polling-app
 
-Containerized: Fully containerized with Docker for easy, reproducible deployment.
+2.Build and run the containers:
 
+docker-compose up --build
+
+3.Open your browser and navigate to http://localhost:3000 to see the application in action.
